@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+TOKEN = "7877765633:AAGbfkfJfiFWDtBeFuhFCrqJ1PaleAUtqZY"
 
 def format_product(product_name, full_name, price, link):
     return f"""
