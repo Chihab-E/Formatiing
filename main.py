@@ -1,7 +1,11 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from dotenv import load_dotenv
+import os
 
-TOKEN = "7877765633:AAGbfkfJfiFWDtBeFuhFCrqJ1PaleAUtqZY"
+# Load environment variables from .env
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 
 def format_product(product_name, full_name, price, link):
     return f"""
